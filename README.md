@@ -4,11 +4,11 @@
 ## usage
  
  ```shell
-yarn add vue-tc-captcha
+yarn add vue-tencent-captcha
 ```
 
 ```vue 
-import Captcha from 'vue-tc-captcha'
+import Captcha from 'vue-tencent-captcha'
 
 Vue.use(Captcha);
 ```
