@@ -6,6 +6,7 @@
     "name": "wangjia",
     "email": "wangjia_1919@163.com"
   },
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

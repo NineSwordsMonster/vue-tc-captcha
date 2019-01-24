@@ -1,4 +1,4 @@
-# vue-tc-captcha
+# vue-tencent-captcha
 
 
 ## usage
