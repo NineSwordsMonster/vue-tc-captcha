@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       show: true,
-      appId: '2046851852',
+      appId: '',
       extraBizParam: {
         bizState: 'hhhhh',
       },
