@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <template v-if="show">
-      <Captcha appid="xxxxx" @callback="captchaCallback">
-        点我啊
+      <Captcha :appId="appId" :callback="captchaCallback" :extraBizParam="extraBizParam">
+        <button>单击验证</button>
       </Captcha>
     </template>
   </div>
@@ -16,6 +16,10 @@ export default {
   data() {
     return {
       show: true,
+      appId: '2046851852',
+      extraBizParam: {
+        bizState: 'hhhhh',
+      },
     };
   },
   components: {

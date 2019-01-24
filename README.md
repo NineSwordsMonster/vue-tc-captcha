@@ -1,29 +1,66 @@
-# vue-tencent-captcha
+# vue-tc-captcha
 
-## Project setup
-```
-yarn install
-```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
+## usage
+ 
+ ```shell
+yarn add vue-tc-captcha
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
+```vue 
+import Captcha from 'vue-tc-captcha'
+
+Vue.use(Captcha);
 ```
 
-### Run your tests
+### 属性
+| 成员        | 说明            | 类型                | 默认值        |
+|------------|-----------------|--------------------|--------------|
+| appId      | appId           | String             | 无           |
+| callback   | 回调函数 | function           | 无           |
+| extraBizParam   | options,  | Object           | null           |
+
+## 配置参数
+options提供以下配置参数：
+
+| 配置名        | 值类型           | 说明      | 
+|------------|-----------------|--------------------|
+| bizState      | Any           | 自定义透传参数，业务可用该字段传递少量数据，该字段的内容会被带入callback回调的对象中 |
+
 ```
-yarn run test
+extraBizParam: {
+    bizState: 'hhh'
+}
+```
+## 回调内容
+|字段名	|值类型	|说明|
+|-----|----|----|
+|ret	|Int	|验证结果，0-验证成功，2-用户主动关闭验证码|
+|ticket	|String	|验证成功的票据，当且仅当ret=0时ticket有值|
+|appid	|String	|场景Id|
+|bizState	|Any	|自定义透传参数|
+
+
+### 示例
+```haml
+<Captcha appid="2028109764" :callback="cb" :extraBizParam="extraBizParam">
+  单击验证
+</Captcha>
 ```
 
-### Lints and fixes files
-```
-yarn run lint
+```javascript 1.6
+// 隐藏验证码
+this.$root.captcha.destroy(); 
+// 显示验证码
+this.$root.captcha.show();
+
+// 回调
+cb(res) {
+  console.log(res);
+}
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```javascript 1.6
+// 获取ticket
+this.$root.captcha.getTicket();
+```

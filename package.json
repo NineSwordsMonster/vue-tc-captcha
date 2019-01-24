@@ -1,7 +1,11 @@
 {
   "name": "vue-tencent-captcha",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "wangjia",
+    "email": "wangjia_1919@163.com"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
