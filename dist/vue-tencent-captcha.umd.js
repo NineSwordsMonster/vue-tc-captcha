@@ -133,12 +133,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"27e231db-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=3d5d85d4&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"27e231db-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=4ca86337&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"app"}},[(_vm.show)?[_c('Captcha',{attrs:{"appId":_vm.appId,"callback":_vm.captchaCallback,"extraBizParam":_vm.extraBizParam}},[_c('button',[_vm._v("单击验证")])])]:_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=3d5d85d4&
+// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=4ca86337&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"27e231db-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Captcha.vue?vue&type=template&id=41a6733e&
 var Captchavue_type_template_id_41a6733e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{ref:"captcha",attrs:{"id":"TencentCaptcha","data-appid":_vm.appId},on:{"data-cbfn":_vm.callback}},[_vm._t("default")],2)}
@@ -335,7 +335,7 @@ var component = normalizeComponent(
   data: function data() {
     return {
       show: true,
-      appId: '2046851852',
+      appId: '',
       extraBizParam: {
         bizState: 'hhhhh'
       }
