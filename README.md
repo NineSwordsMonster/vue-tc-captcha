@@ -1,5 +1,5 @@
 # vue-tencent-captcha
-
+腾讯防水墙，验证码组件
 
 ## usage
  
