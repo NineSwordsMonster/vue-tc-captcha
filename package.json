@@ -1,11 +1,13 @@
 {
   "name": "vue-tencent-captcha",
-  "version": "0.1.2-rc4",
+  "version": "0.1.6",
   "private": false,
   "author": {
     "name": "wangjia",
     "email": "wangjia_1919@163.com"
   },
+  "description": "基于 Vue 的腾讯 防水墙 验证码",
+  "keyword": "vue tencent captcha",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -13,6 +15,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --dest lib packages/index.js"
   },
+  "main": "lib/vue-tencent-captcha.umd.min.js",
   "dependencies": {
     "vue": "^2.5.21"
   },
