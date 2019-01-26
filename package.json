@@ -1,6 +1,6 @@
 {
   "name": "vue-tencent-captcha",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "private": false,
   "author": {
     "name": "wangjia",
@@ -11,7 +11,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "publish": "vue-cli-service build --mode production --dest dist --target wc --name tencent-captcha && yarn publish"
+    "pub": "vue-cli-service build --mode production --dest dist --target wc --name tencent-captcha 'src/components/*.vue' && yarn publish"
   },
   "dependencies": {
     "vue": "^2.5.21"
