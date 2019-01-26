@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'TencentCaptcha',
+  name: 'vueTencentCaptcha',
   props: {
     appId: {
       type: String,

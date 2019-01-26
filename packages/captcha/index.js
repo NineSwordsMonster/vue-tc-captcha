@@ -1,4 +1,4 @@
-import Captcha from './Captcha.vue';
+import Captcha from '../captcha/Captcha.vue';
 
 const captcha = {
   install(Vue) {
