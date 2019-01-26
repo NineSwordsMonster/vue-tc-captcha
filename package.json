@@ -11,7 +11,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "publish": "vue-cli-service build --mode production --dest dist --target lib --modern && yarn publish"
+    "publish": "vue-cli-service build --mode production --dest dist --target wc --name tencent-captcha && yarn publish"
   },
   "dependencies": {
     "vue": "^2.5.21"
