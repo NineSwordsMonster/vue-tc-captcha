@@ -1,0 +1,17 @@
+# 忽略目录
+.idea
+examples/
+packages/
+public/
+
+# 忽略指定文件
+vue.config.js
+babel.config.js
+*.map
+CODE_OF_CONDUCT.md
+LICENSE
+.gitignore
+yarn-error.log
+yarn.lock
+.editorconfig
+package.json

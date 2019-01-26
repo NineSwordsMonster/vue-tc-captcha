@@ -1,7 +1,18 @@
 module.exports = {
   pages: {
-    index: {
-      entry: process.env.NODE_ENV === 'production' ? 'src/main.js' : 'src/components/index.js',
-    },
+    entry: 'examples/main.js',
+    template: 'public/index.html',
+    filename: 'index.html',
   },
-}
+
+  chainWebpack: (config) => {
+    config.module
+      .rule('js')
+      .include
+      .add('/packages')
+      .end()
+      .use('babel')
+      .loader('babel-loader')
+      .tap(options => options);
+  },
+};

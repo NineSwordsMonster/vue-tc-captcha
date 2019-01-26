@@ -1,12 +1,6 @@
-import Captcha from '../captcha/Captcha.vue';
+import captcha from './src/Captcha.vue';
 
-const captcha = {
-  install(Vue) {
-    if (captcha.installed) return;
-    Vue.component(Captcha.name, Captcha);
-  },
+captcha.install = (Vue) => {
+  Vue.component(captcha.name, captcha);
 };
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(captcha);
-}
 export default captcha;
