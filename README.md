@@ -43,9 +43,9 @@ extraBizParam: {
 
 ### 示例
 ```haml
-<Captcha appid="2028109764" :callback="cb" :extraBizParam="extraBizParam">
+<tencentCaptcha appid="xxx" :callback="cb" :extraBizParam="extraBizParam">
   单击验证
-</Captcha>
+</tencentCaptcha>
 ```
 
 ```javascript 1.6
