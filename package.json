@@ -1,6 +1,6 @@
 {
   "name": "vue-tencent-captcha",
-  "version": "0.1.8-rc3",
+  "version": "0.1.8-rc4",
   "private": false,
   "author": {
     "name": "wangjia",
@@ -15,7 +15,7 @@
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --dest lib packages/index.js"
   },
-  "main": "lib/vue-tencent-captcha.umd.min.js",
+  "main": "lib/vue-tencent-captcha.common.js",
   "dependencies": {
     "vue": "^2.5.21"
   },
