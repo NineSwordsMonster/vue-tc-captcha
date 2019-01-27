@@ -6,8 +6,8 @@
     "name": "wangjia",
     "email": "wangjia_1919@163.com"
   },
+  "keywords": ["vue", "tencent", "captcha"],
   "description": "基于 Vue 的腾讯 防水墙 验证码",
-  "keyword": "vue tencent captcha",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
