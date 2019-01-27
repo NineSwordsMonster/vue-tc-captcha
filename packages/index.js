@@ -1,13 +1,29 @@
-import Captcha from './Captcha.vue';
+import tencentCaptcha from './Captcha.vue';
+
+const components = {
+  tencentCaptcha,
+};
+
+const cm = {
+  ...components,
+};
 
 const install = (Vue) => {
   if (install.installed) return;
-  Vue.component(Captcha.name, Captcha);
+
+  Object.keys(cm).forEach((key) => {
+    Vue.component(key, cm[key]);
+  });
 };
-Captcha.install = install
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Captcha);
+  install(window.Vue);
 }
 
-export default Captcha;
+const API = {
+  // version: process.env.VERSION,
+  install,
+  ...components,
+};
+
+export default API;
