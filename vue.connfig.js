@@ -13,6 +13,7 @@ module.exports = {
       .end()
       .use('babel')
       .loader('babel-loader')
-      .tap(options => options);
+      .tap(options => options)
+      .end();
   },
 };
