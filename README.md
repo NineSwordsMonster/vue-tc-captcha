@@ -42,7 +42,7 @@ extraBizParam: {
 
 
 ### 示例
-```haml
+```html
 <tencentCaptcha appid="xxx" :callback="cb" :extraBizParam="extraBizParam">
   单击验证
 </tencentCaptcha>
