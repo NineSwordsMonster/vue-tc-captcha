@@ -6,6 +6,14 @@
     "name": "wangjia",
     "email": "wangjia_1919@163.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NineSwordsMonster/vue-tencent-captcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NineSwordsMonster/vue-tencent-captcha/issues",
+    "email": "wangjia_1919@163.com"
+  },
   "keywords": ["vue", "tencent", "captcha"],
   "description": "基于 Vue 的腾讯 防水墙 验证码",
   "license": "MIT",

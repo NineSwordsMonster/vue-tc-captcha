@@ -54,7 +54,7 @@ this.$root.captcha.destroy();
 // 显示验证码
 this.$root.captcha.show();
 
-// 回调
+// 回调
 cb(res) {
   console.log(res);
 }
