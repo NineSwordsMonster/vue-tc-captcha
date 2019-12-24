@@ -8,9 +8,48 @@ yarn add vue-tencent-captcha
 ```
 
 ```vue 
-import Captcha from 'vue-tencent-captcha'
+import Captcha from '../packages/Captcha.vue';
 
-Vue.use(Captcha);
+export default {
+  name: 'app',
+  data() {
+    return {
+      show: true,
+      appId: 'tt12345',
+      extraBizParam: {
+        bizState: 'hhhhh',
+      },
+    };
+  },
+  components: {
+    Captcha,
+  },
+  mounted() {
+    setTimeout(() => {
+      // this.$root.captcha.show();
+    }, 5000);
+  },
+  watch: {
+    show(newVal) {
+      if (!newVal) {
+        this.$root.captcha.destroy();
+      }
+    },
+  },
+  methods: {
+    captchaCallback(res) {
+      console.log(res);
+    },
+  },
+};
+```
+
+```vue
+<template v-if="show">
+  <Captcha :appId="appId" :callback="captchaCallback" :extraBizParam="extraBizParam">
+    <button>单击验证</button>
+  </Captcha>
+</template>
 ```
 
 ### 属性
@@ -39,7 +78,12 @@ extraBizParam: {
 |ticket	|String	|验证成功的票据，当且仅当ret=0时ticket有值|
 |appid	|String	|场景Id|
 |bizState	|Any	|自定义透传参数|
-
+```javascript
+// 回调
+cb(res) {
+  console.log(res);
+}
+```
 
 ### 示例
 ```html
@@ -48,18 +92,13 @@ extraBizParam: {
 </tencentCaptcha>
 ```
 
+### 实例方法
 ```javascript 1.6
 // 隐藏验证码
 this.$root.captcha.destroy(); 
 // 显示验证码
 this.$root.captcha.show();
-
-// 回调
-cb(res) {
-  console.log(res);
-}
 ```
-
 ```javascript 1.6
 // 获取ticket
 this.$root.captcha.getTicket();

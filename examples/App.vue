@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <template v-if="show">
-      <Captcha :appId="appId" :callback="captchaCallback" :extraBizParam="extraBizParam">
+      <Captcha :appId="appId" @callback="captchaCallback" :extraBizParam="extraBizParam">
         <button>单击验证</button>
       </Captcha>
     </template>
@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import Captcha from '@/components/Captcha.vue';
+import Captcha from '../packages/Captcha.vue';
 
 export default {
   name: 'app',
   data() {
     return {
       show: true,
-      appId: '',
+      appId: 'tt12345',
       extraBizParam: {
         bizState: 'hhhhh',
       },

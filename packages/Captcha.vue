@@ -29,9 +29,12 @@ export default {
   methods: {
     init() {
       const self = this;
-      self.$root.captcha = new window.TencentCaptcha(self.$refs.captcha, self.appId, (res) => {
-        self.callback(res);
-      }, self.extraBizParam);
+      self.$root.captcha = new window.TencentCaptcha(
+        self.$refs.captcha,
+        self.appId,
+        (res) => { self.callback(res); },
+        self.extraBizParam,
+      );
     },
   },
   mounted() {
