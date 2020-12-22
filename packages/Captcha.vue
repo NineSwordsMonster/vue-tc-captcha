@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'tencentCaptcha',
+  name: 'TencentCaptcha',
   props: {
     appId: {
       type: String,
@@ -37,7 +37,7 @@ export default {
       );
     },
   },
-  mounted() {
+  onMounted() {
     if (typeof window.TencentCaptcha !== 'function') {
       const URL = 'https://ssl.captcha.qq.com/TCaptcha.js';
       const script = document.createElement('script');

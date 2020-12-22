@@ -4,6 +4,9 @@ module.exports = {
     template: 'public/index.html',
     filename: 'index.html',
   },
+  css: {
+    extract: false,
+  },
 
   chainWebpack: (config) => {
     config.module

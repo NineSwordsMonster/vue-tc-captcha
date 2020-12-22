@@ -8,22 +8,10 @@ const cm = {
   ...components,
 };
 
-const install = (Vue) => {
-  if (install.installed) return;
-
-  Object.keys(cm).forEach((key) => {
-    Vue.component(key, cm[key]);
-  });
+export default {
+  install: (app) => {
+    Object.keys(cm).forEach((key) => {
+      app.component(key, cm[key]);
+    });
+  },
 };
-
-if (typeof window !== 'undefined' && window.Vue) {
-  install(window.Vue);
-}
-
-const API = {
-  // version: process.env.VERSION,
-  install,
-  ...components,
-};
-
-export default API;
